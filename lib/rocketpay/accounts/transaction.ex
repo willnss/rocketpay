@@ -21,7 +21,7 @@ defmodule Rocketpay.Accounts.Transaction do
     case Repo.transaction(multi) do
       {:error, _operation, reason, _changes} -> {:error, reason}
       {:ok, %{deposit: to_account, withdraw: from_account}} ->
-        {:ok, TransactionResponse.build(to_account, from_account)}
+        {:ok, TransactionResponse.build(from_account, to_account)}
     end
   end
 end
