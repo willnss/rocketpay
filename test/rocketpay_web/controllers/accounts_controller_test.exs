@@ -14,8 +14,8 @@ defmodule RocketpayWeb.AccountsControllerTest do
       }
 
       {:ok, %User{account: %Account{id: account_id}}} = Rocketpay.create_user(params)
-
-      conn = put_req_header(conn, "authorization", "Basic YmFuYW5hOm5hbmljYTEyMw==")
+      credentials = "will:123456"
+      conn = put_req_header(conn, "authorization", "Basic #{Base.encode64(credentials)}")
 
       {:ok, conn: conn, account_id: account_id}
     end
