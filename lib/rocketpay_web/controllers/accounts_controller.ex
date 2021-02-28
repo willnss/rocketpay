@@ -46,7 +46,6 @@ defmodule RocketpayWeb.AccountsController do
   end
 
   defp authorize_transaction(conn, _params) do
-    IO.inspect(conn)
     %{params: %{"from" => id}} = conn
 
     if conn.assigns.current_user.account_id == id do
