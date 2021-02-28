@@ -2,6 +2,9 @@
 
 Projeto para exercitar os fundamentos básicos em Elixir/Phoenix seguindo a trilha Elixir no evento NLW4 RocketSeat.
 
+Requisitos:
+ - Possuir uma instância PostgresSQL em execução, vide arquivos de configuração
+
 #UPDATES
  - Implementado autenticação com base nos usuários do banco de dados e autorização de transaçcões para não permitir que qualquer usuário faça transferência senão da conta dele mesmo
  - Ajuste dos testes devido a autenticação dinâmic e não mais fixa
