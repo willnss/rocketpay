@@ -1,4 +1,4 @@
-# Rocketpay
+# 🚀 Rocketpay
 
 Projeto para exercitar os fundamentos básicos em Elixir/Phoenix seguindo a trilha Elixir no evento NLW4 RocketSeat.
 
